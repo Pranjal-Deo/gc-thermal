@@ -3,505 +3,551 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GC Thermal Systems</title>
+  <title>GC Thermal Systems | Premium Industrial Heating</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ManufacturingBusiness",
+  "name": "GC Thermal Systems",
+  "url": "https://www.gcthermalsystems.com",
+  "logo": "https://www.gcthermalsystems.com/assets/images/logo.png",
+  "image": "https://www.gcthermalsystems.com/assets/images/hero.png",
+  "description": "GC Thermal Systems provides industrial burners, furnaces, gas trains, and thermal engineering solutions with over 15 years of expertise.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Industrial Area",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-8329934227",
+    "contactType": "sales",
+    "availableLanguage": ["English", "Hindi"]
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "sameAs": [
+    "https://wa.me/919881196467",
+    "mailto:sales.gcthermalpune@gmail.com",
+    "https://www.gcthermalsystems.com"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What industries does GC Thermal Systems serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GC Thermal Systems serves industries such as metal processing, heat treatment, aluminium melting, galvanising, and other industrial manufacturing sectors requiring reliable heating solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide custom industrial furnaces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we design and manufacture custom industrial furnaces including heat treatment furnaces, aluminium melting furnaces, rotary furnaces, and wire annealing furnaces based on client requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer installation and maintenance services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GC Thermal Systems provides complete lifecycle support including installation, commissioning, annual maintenance contracts (AMC), breakdown services, and furnace refurbishment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you supply burner spare parts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we supply a wide range of genuine burner spare parts including solenoid valves, controllers, sensors, ignition transformers, pressure switches, thermocouples, and refractory materials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which locations do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We are based in Pune, Maharashtra and serve clients across India with onsite support, supply, and technical services."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Industrial Burners",
+  "description": "High-efficiency industrial gas and oil burners designed for metal processing, heat treatment, and manufacturing applications.",
+  "image": "https://www.gcthermalsystems.com/assets/images/burners.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "GC Thermal Systems"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "GC Thermal Systems"
+  },
+  "category": "Industrial Heating Equipment",
+  "url": "https://www.gcthermalsystems.com/#products"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Industrial Furnaces",
+  "description": "Custom-built industrial furnaces including heat treatment, aluminium melting, rotary, and wire annealing furnaces.",
+  "image": "https://www.gcthermalsystems.com/assets/images/furnaces.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "GC Thermal Systems"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "GC Thermal Systems"
+  },
+  "category": "Industrial Furnace Systems",
+  "url": "https://www.gcthermalsystems.com/#products"
+}
+</script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
   <style>
     html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .product-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Custom Scrollbar for Spares Modal */
+    .custom-scroll::-webkit-scrollbar { width: 6px; }
+    .custom-scroll::-webkit-scrollbar-track { background: #f1f1f1; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #f97316; border-radius: 10px; }
   </style>
 </head>
 
-<body class="font-sans text-gray-800 bg-gray-50">
+<body class="text-slate-900 bg-gray-50/50">
 
-<!-- ================= NAVBAR ================= -->
-
-  <header class="fixed top-0 w-full bg-slate-50 shadow z-50">
-
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
-    <div class="flex items-center gap-3">
-      <img src="assets/images/logo.png" class="h-16 md:h-20 object-contain">
-      <div>
-        <p class="text-xl font-bold">GC Thermal Systems</p>
-        <p class="text-sm text-gray-500">Industrial Heating Solutions</p>
+<header class="fixed top-0 w-full glass-nav z-[100]">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="flex items-center gap-4">
+      <img src="assets/images/logo.png" alt="Logo" class="h-12 md:h-16 object-contain">
+      <div class="hidden sm:block">
+        <p class="text-xl font-extrabold tracking-tight text-slate-800">GC Thermal Systems</p>
+        <p class="text-[10px] uppercase tracking-[0.2em] text-orange-600 font-bold">Industrial Heating Excellence</p>
       </div>
     </div>
 
-    <nav class="hidden md:flex gap-8 font-medium">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
+    <nav class="hidden lg:flex gap-10 font-semibold text-sm uppercase tracking-wide">
+      <a href="#home" class="hover:text-orange-600 transition">Home</a>
+      <a href="#about" class="hover:text-orange-600 transition">About</a>
+      <a href="#products" class="hover:text-orange-600 transition">Products</a>
+      <a href="#services" class="hover:text-orange-600 transition">Services</a>
+      <a href="#contact" class="hover:text-orange-600 transition">Contact</a>
     </nav>
 
-    <a href="#contact" class="bg-orange-500 text-white px-5 py-2 rounded-md font-semibold">
-      Get a Quote
+    <a href="#contact" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-orange-200 transition text-sm">
+      GET A QUOTE
     </a>
   </div>
 </header>
 
-<div class="h-24"></div>
+<section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="assets/images/hero.png" class="w-full h-full object-cover" alt="Industrial Heating">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+  </div>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="relative bg-cover bg-center h-[90vh]"
-  style="background-image:url('assets/images/hero.png')">
-  <div class="absolute inset-0 bg-black/65"></div>
-  <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center text-white">
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 text-white">
+    <div class="max-w-3xl">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-orange-600 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6">
+        Est. 2017 | 15+ Years Experience
+      </span>
+
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+        One Stop, Complete <br>
+        <span class="text-orange-500">Heating Systems.</span>
+      </h1>
+
+      <p class="text-lg text-slate-300 mb-10 max-w-xl leading-relaxed">
+        Providing end-to-end industrial heating solutions, from high-efficiency burners to full-scale furnace fabrication and maintenance.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#products" class="bg-orange-600 hover:bg-orange-700 px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-orange-900/20">
+          Explore Products
+        </a>
+        <a href="#contact" class="bg-white/10 hover:bg-white/20 backdrop-blur-md px-8 py-4 rounded-lg font-bold border border-white/20 transition-all">
+          Contact Expert
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="relative">
+      <img src="assets/images/about.png" class="rounded-2xl shadow-2xl z-10 relative">
+      <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-orange-100 rounded-2xl -z-0"></div>
+    </div>
     <div>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">GC THERMAL SYSTEMS</h1>
-      <p class="text-lg mb-6">One Stop, Complete Heating Systems</p>
-      <ul class="space-y-2 mb-6">
-        <li>✔ Industrial Burners & Furnaces</li>
-        <li>✔ Gas Trains & Control Systems</li>
-        <li>✔ Burner Spare Parts & Maintenance</li>
-      </ul>
-      <br>
-      
-      <a href="#contact" class="bg-orange-500 px-6 py-3 rounded font-semibold">
-        Get a Free Quote
+      <h2 class="text-orange-600 font-bold uppercase tracking-widest text-sm mb-4">Our Legacy</h2>
+      <h3 class="text-4xl font-bold text-slate-900 mb-6">Leading the industry with thermal engineering precision.</h3>
+      <p class="text-slate-600 text-lg mb-6 leading-relaxed">
+        GC Thermal Systems is a trusted partner for industrial heating solutions. With over 15 years of technical expertise, we specialize in gas trains, industrial burners, and furnaces.
+      </p>
+      <div class="grid grid-cols-2 gap-6 mb-8">
+        <div class="border-l-4 border-orange-500 pl-4">
+          <p class="text-2xl font-bold text-slate-900">500+</p>
+          <p class="text-sm text-slate-500">Projects Delivered</p>
+        </div>
+        <div class="border-l-4 border-orange-500 pl-4">
+          <p class="text-2xl font-bold text-slate-900">24/7</p>
+          <p class="text-sm text-slate-500">Technical Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+    <h2 class="text-4xl font-bold text-slate-900 mb-4">Product Portfolio</h2>
+    <p class="text-slate-500 max-w-2xl mx-auto text-lg">High-performance components designed for safety and fuel efficiency.</p>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="product-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center">
+      <div class="h-48 flex items-center justify-center mb-6">
+        <img src="assets/images/burners.png" class="max-h-full object-contain">
+      </div>
+      <h4 class="text-xl font-bold mb-4">Industrial Burners</h4>
+      <p class="text-slate-500 text-sm mb-6">High-efficiency gas and oil burners for diverse industrial applications.</p>
+      <button onclick="openModal('burnerModal')" class="w-full py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-orange-600 transition">View Products</button>
+    </div>
+
+    <div class="product-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center">
+      <div class="h-48 flex items-center justify-center mb-6">
+        <img src="assets/images/furnaces.png" class="max-h-full object-contain">
+      </div>
+      <h4 class="text-xl font-bold mb-4">Industrial Furnaces</h4>
+      <p class="text-slate-500 text-sm mb-6">Custom-designed thermal processing units for melting and heat treatment.</p>
+      <button onclick="openModal('furnaceModal')" class="w-full py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-orange-600 transition">View Products</button>
+    </div>
+
+    <div class="product-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center">
+      <div class="h-48 flex items-center justify-center mb-6">
+        <img src="assets/images/spares.png" class="max-h-full object-contain">
+      </div>
+      <h4 class="text-xl font-bold mb-4">Burner Spare Parts</h4>
+      <p class="text-slate-500 text-sm mb-6">Authentic components including controllers, sensors, and valves.</p>
+      <button onclick="openModal('spareModal')" class="w-full py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-orange-600 transition">View Products</button>
+    </div>
+  </div>
+</section>
+
+<div id="spareModal" class="fixed inset-0 bg-slate-900/90 hidden items-center justify-center z-[110] p-4 backdrop-blur-sm">
+  <div class="bg-white max-w-6xl w-full rounded-3xl overflow-hidden shadow-2xl relative flex flex-col h-[90vh]">
+    <button onclick="closeModal('spareModal')" class="absolute top-6 right-6 p-2 bg-gray-100 rounded-full hover:bg-orange-500 hover:text-white transition z-10 text-xl">✕</button>
+    
+    <div class="p-8 border-b bg-gray-50">
+      <h2 class="text-3xl font-bold text-slate-900">Burner Spare Parts & Accessories</h2>
+      <p class="text-slate-500">Browse our comprehensive catalog of 44+ industrial components.</p>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-8 custom-scroll">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/7 POLE CONNECTOR.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">7 POLE CONNECTOR</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/AIR PRESSURE SWITCH.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">AIR PRESSURE SWITCH</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/AIR PRESSURE SWITCHES.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">AIR PRESSURE SWITCHES</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BASE PLATE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BASE PLATE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BLOWER MOTOR.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BLOWER MOTOR</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BLOWER WHEEL FAN.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BLOWER WHEEL FAN</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BRAHMA SOLENOID VALVE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BRAHMA SOLENOID VALVE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BURNER BLOWER MOTOR.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BURNER BLOWER MOTOR</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BURNER CONTROLLER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BURNER CONTROLLER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/BURNER ELECTRODE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">BURNER ELECTRODE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/COFI TRANSFORMER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">COFI TRANSFORMER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/COUPLING.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">COUPLING</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/DANFOSS FUEL PUMP.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">DANFOSS FUEL PUMP</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/DANFOSS NOZZLE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">DANFOSS NOZZLE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/DIFFUSER DISC.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">DIFFUSER DISC</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/DUNGS MULTIBLOCK.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">DUNGS MULTIBLOCK</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/ELECTRODE CAP.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">ELECTRODE CAP</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/FUEL PUMP.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">FUEL PUMP</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/GAS ADJUSTER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">GAS ADJUSTER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/GAS FILTER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">GAS FILTER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/GAS HOSE PIPE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">GAS HOSE PIPE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/GAS PRESSURE SWITCH.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">GAS PRESSURE SWITCH</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/GAS SOLENOID VALVE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">GAS SOLENOID VALVE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/H TYPE ELECTRODE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">H TYPE ELECTRODE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/HT CABLE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">HT CABLE</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/HT LEAD.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">HT LEAD</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/IGNITION TRANSFORMER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">IGNITION TRANSFORMER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/INDIAN BURNER CONTROLLER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">INDIAN BURNER CONTROLLER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/PHOTOCELL.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">PHOTOCELL</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/PRESSURE GAUGES.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">PRESSURE GAUGES</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/QRA2.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">QRA2</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/REFRACTORY MATERIAL.jpg" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">REFRACTORY MATERIAL</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/SIC TUBES.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">SIC TUBES</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/SILICON CARBIDE TUBES.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">SILICON CARBIDE TUBES</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/SILICON CARBIDE SKID.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">SILICON CARBIDE SKID</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/SOLENOID COIL.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">SOLENOID COIL</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/SOLENOID VALVES.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">SOLENOID VALVES</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/SPARK PLUG.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">SPARK PLUG</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/THERMOCOUPLES.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">THERMOCOUPLES</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/UV CENSOR.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">UV SENSOR</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/UVZ PHOTOCELL.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">UVZ PHOTOCELL</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/VAPORISER HEATER.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">VAPORISER HEATER</p></div>
+        <div class="border rounded-xl p-4 text-center hover:border-orange-500 transition"><img src="assets/images/VOT PIGTAIL PIPE.png" class="h-24 mx-auto mb-2 object-contain"><p class="text-[11px] font-bold">VOT PIGTAIL PIPE</p></div>
+      </div>
+    </div>
+
+    <div class="p-6 bg-gray-50 flex justify-center">
+      <a href="https://wa.me/919881196467?text=Enquiry%20for%20Spare%20Parts" target="_blank" class="bg-orange-600 text-white px-10 py-4 rounded-xl font-bold flex items-center gap-3 hover:bg-orange-700 transition">
+        Order Now via WhatsApp
       </a>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div class="bg-white p-10 rounded-xl shadow-md">
-      <h2 class="text-3xl font-bold mb-4">About Us</h2>
-      <p class="text-gray-600 mb-4">
-        GC Thermal Systems is a trusted partner for industrial heating solutions
-        with over 15 years of experience in burners, furnaces & gas train systems.
-      </p>
-      <p class="text-gray-600">
-        We provide design, installation, commissioning, maintenance & AMC services.
-      </p>
-    </div>
-
-    <div class="bg-white p-4 rounded-xl shadow-md">
-      <img src="assets/images/about.png" class="w-full max-h-[420px] object-cover rounded-lg">
-    </div>
-  </div>
-</section>
-
-<!-- ================= PRODUCTS & SERVICES ================= -->
-<section id="products" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">
-      Our Products & Services
-    </h2>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- INDUSTRIAL BURNERS -->
-      <div
-        class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
-        
-        <img src="assets/images/burners.png"
-             class="h-40 mx-auto mb-4 object-contain">
-
-        <h3 class="font-semibold text-lg mb-4">
-          Industrial Burners
-        </h3>
-
-        <button onclick="openBurnerModal()"
-          class="bg-orange-500 hover:bg-orange-600
-                 text-white px-6 py-2 rounded-md
-                 font-medium transition">
-          View Products
-        </button>
-      </div>
-
-      <!-- INDUSTRIAL FURNACES -->
-      <div
-        class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
-        
-        <img src="assets/images/furnaces.png"
-             class="h-40 mx-auto mb-4 object-contain">
-
-        <h3 class="font-semibold text-lg mb-4">
-          Industrial Furnaces
-        </h3>
-
-        <button onclick="openFurnaceModal()"
-          class="bg-orange-500 hover:bg-orange-600
-                 text-white px-6 py-2 rounded-md
-                 font-medium transition">
-          View Products
-        </button>
-      </div>
-
-      <!-- BURNER SPARE PARTS -->
-      <div
-        class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
-        
-        <img src="assets/images/spares.png"
-             class="h-40 mx-auto mb-4 object-contain">
-
-        <h3 class="font-semibold text-lg mb-4">
-          Burner Spare Parts
-        </h3>
-
-        <button onclick="openSpareModal()"
-          class="bg-orange-500 hover:bg-orange-600
-                 text-white px-6 py-2 rounded-md
-                 font-medium transition">
-          View Products
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= BURNER MODAL ================= -->
-<div id="burnerModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-  <div class="bg-white max-w-lg w-full rounded-xl p-6 relative">
-    <button onclick="closeBurnerModal()" class="absolute top-3 right-3 text-xl">✕</button>
-    <h2 class="text-2xl font-bold mb-6">Industrial Burners</h2>
-
+<div id="burnerModal" class="fixed inset-0 bg-slate-900/90 hidden items-center justify-center z-[110] p-4">
+  <div class="bg-white max-w-lg w-full rounded-3xl p-8 relative">
+    <button onclick="closeModal('burnerModal')" class="absolute top-4 right-4 text-xl">✕</button>
+    <h3 class="text-2xl font-bold mb-6">Industrial Burners</h3>
     <div class="grid grid-cols-2 gap-6 text-center">
-      <div class="border p-3 rounded">
-        <img src="assets/images/furnace-burner.png" class="h-28 mx-auto mb-2">
-        Furnace Burners
-      </div>
-      <div class="border p-3 rounded">
-        <img src="assets/images/monobloc.png" class="h-28 mx-auto mb-2">
-        Monobloc Burners
-      </div>
+      <div class="border p-4 rounded-xl"><img src="assets/images/furnace-burner.png" class="h-32 mx-auto mb-3 object-contain">Furnace Burners</div>
+      <div class="border p-4 rounded-xl"><img src="assets/images/monobloc.png" class="h-32 mx-auto mb-3 object-contain">Monobloc Burners</div>
     </div>
-
-    <a href="https://wa.me/918329934227?text=Enquiry%20for%20Industrial%20Burners"
-       class="block mt-6 bg-orange-500 text-white text-center py-3 rounded font-semibold">
-      Enquire on WhatsApp
-    </a>
+    <a href="https://wa.me/919881196467?text=Burner%20Enquiry" class="block text-center mt-8 bg-orange-600 text-white py-4 rounded-xl font-bold">Request Quotation</a>
   </div>
 </div>
 
-<!-- ================= FURNACE MODAL ================= -->
-<div id="furnaceModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-  <div class="bg-white max-w-3xl w-full rounded-xl p-6 relative">
-    <button onclick="closeFurnaceModal()" class="absolute top-3 right-3 text-xl">✕</button>
-    <h2 class="text-2xl font-bold mb-6">Industrial Furnaces</h2>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-      <div class="border p-3 rounded"><img src="assets/images/wire-annealing.png" class="h-28 mx-auto mb-2">Wire Annealing</div>
-      <div class="border p-3 rounded"><img src="assets/images/Heat Treatment Furnace.png" class="h-28 mx-auto mb-2">Heat Treatment</div>
-      <div class="border p-3 rounded"><img src="assets/images/Aluminium Melting Furnace.png" class="h-28 mx-auto mb-2">Aluminium Melting</div>
-      <div class="border p-3 rounded"><img src="assets/images/Rotary Furnace.png" class="h-28 mx-auto mb-2">Rotary Furnace</div>
-      <div class="border p-3 rounded"><img src="assets/images/Galvanising Furnace.png" class="h-28 mx-auto mb-2">Galvanising Furnace</div>
+<div id="furnaceModal" class="fixed inset-0 bg-slate-900/90 hidden items-center justify-center z-[110] p-4">
+  <div class="bg-white max-w-3xl w-full rounded-3xl p-8 relative">
+    <button onclick="closeModal('furnaceModal')" class="absolute top-4 right-4 text-xl">✕</button>
+    <h3 class="text-2xl font-bold mb-6">Industrial Furnaces</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+      <div class="border p-4 rounded-xl"><img src="assets/images/wire-annealing.png" class="h-24 mx-auto mb-2">Wire Annealing</div>
+      <div class="border p-4 rounded-xl"><img src="assets/images/Heat Treatment Furnace.png" class="h-24 mx-auto mb-2">Heat Treatment</div>
+      <div class="border p-4 rounded-xl"><img src="assets/images/Aluminium Melting Furnace.png" class="h-24 mx-auto mb-2">Aluminium Melting</div>
+      <div class="border p-4 rounded-xl"><img src="assets/images/Rotary Furnace.png" class="h-24 mx-auto mb-2">Rotary Furnace</div>
+      <div class="border p-4 rounded-xl"><img src="assets/images/Galvanising Furnace.png" class="h-24 mx-auto mb-2">Galvanising</div>
     </div>
-
-    <a href="https://wa.me/918329934227?text=Enquiry%20for%20Industrial%20Furnaces"
-       class="block mt-6 bg-orange-500 text-white text-center py-3 rounded font-semibold">
-      Enquire on WhatsApp
-    </a>
+    <a href="https://wa.me/919881196467?text=Furnace%20Enquiry" class="block text-center mt-8 bg-orange-600 text-white py-4 rounded-xl font-bold">Request Quotation</a>
   </div>
 </div>
 
-<!-- ================= SPARE PARTS MODAL ================= -->
-<div id="spareModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-  <div class="bg-white max-w-6xl w-full rounded-xl p-6 relative">
-    <button onclick="closeSpareModal()" class="absolute top-3 right-3 text-xl">✕</button>
-
-    <h2 class="text-2xl font-bold mb-6 text-center">Burner Spare Parts</h2>
-
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-h-[65vh] overflow-y-auto text-center text-sm">
-
-      <!-- ALL 44 ITEMS -->
-      <div class="border p-3 rounded"><img src="assets/images/7 POLE CONNECTOR.png" class="h-24 mx-auto mb-2">7 POLE CONNECTOR</div>
-      <div class="border p-3 rounded"><img src="assets/images/AIR PRESSURE SWITCH.png" class="h-24 mx-auto mb-2">AIR PRESSURE SWITCH</div>
-      <div class="border p-3 rounded"><img src="assets/images/AIR PRESSURE SWITCHES.png" class="h-24 mx-auto mb-2">AIR PRESSURE SWITCHES</div>
-      <div class="border p-3 rounded"><img src="assets/images/BASE PLATE.png" class="h-24 mx-auto mb-2">BASE PLATE</div>
-      <div class="border p-3 rounded"><img src="assets/images/BLOWER MOTOR.png" class="h-24 mx-auto mb-2">BLOWER MOTOR</div>
-      <div class="border p-3 rounded"><img src="assets/images/BLOWER WHEEL FAN.png" class="h-24 mx-auto mb-2">BLOWER WHEEL FAN</div>
-      <div class="border p-3 rounded"><img src="assets/images/BRAHMA SOLENOID VALVE.png" class="h-24 mx-auto mb-2">BRAHMA SOLENOID VALVE</div>
-      <div class="border p-3 rounded"><img src="assets/images/BURNER BLOWER MOTOR.png" class="h-24 mx-auto mb-2">BURNER BLOWER MOTOR</div>
-      <div class="border p-3 rounded"><img src="assets/images/BURNER CONTROLLER.png" class="h-24 mx-auto mb-2">BURNER CONTROLLER</div>
-      <div class="border p-3 rounded"><img src="assets/images/BURNER ELECTRODE.png" class="h-24 mx-auto mb-2">BURNER ELECTRODE</div>
-
-      <div class="border p-3 rounded"><img src="assets/images/COFI TRANSFORMER.png" class="h-24 mx-auto mb-2">COFI TRANSFORMER</div>
-      <div class="border p-3 rounded"><img src="assets/images/COUPLING.png" class="h-24 mx-auto mb-2">COUPLING</div>
-      <div class="border p-3 rounded"><img src="assets/images/DANFOSS FUEL PUMP.png" class="h-24 mx-auto mb-2">DANFOSS FUEL PUMP</div>
-      <div class="border p-3 rounded"><img src="assets/images/DANFOSS NOZZLE.png" class="h-24 mx-auto mb-2">DANFOSS NOZZLE</div>
-      <div class="border p-3 rounded"><img src="assets/images/DIFFUSER DISC.png" class="h-24 mx-auto mb-2">DIFFUSER DISC</div>
-      <div class="border p-3 rounded"><img src="assets/images/DUNGS MULTIBLOCK.png" class="h-24 mx-auto mb-2">DUNGS MULTIBLOCK</div>
-      <div class="border p-3 rounded"><img src="assets/images/ELECTRODE CAP.png" class="h-24 mx-auto mb-2">ELECTRODE CAP</div>
-      <div class="border p-3 rounded"><img src="assets/images/FUEL PUMP.png" class="h-24 mx-auto mb-2">FUEL PUMP</div>
-      <div class="border p-3 rounded"><img src="assets/images/GAS ADJUSTER.png" class="h-24 mx-auto mb-2">GAS ADJUSTER</div>
-      <div class="border p-3 rounded"><img src="assets/images/GAS FILTER.png" class="h-24 mx-auto mb-2">GAS FILTER</div>
-
-      <div class="border p-3 rounded"><img src="assets/images/GAS HOSE PIPE.png" class="h-24 mx-auto mb-2">GAS HOSE PIPE</div>
-      <div class="border p-3 rounded"><img src="assets/images/GAS PRESSURE SWITCH.png" class="h-24 mx-auto mb-2">GAS PRESSURE SWITCH</div>
-      <div class="border p-3 rounded"><img src="assets/images/GAS SOLENOID VALVE.png" class="h-24 mx-auto mb-2">GAS SOLENOID VALVE</div>
-      <div class="border p-3 rounded"><img src="assets/images/H TYPE ELECTRODE.png" class="h-24 mx-auto mb-2">H TYPE ELECTRODE</div>
-      <div class="border p-3 rounded"><img src="assets/images/HT CABLE.png" class="h-24 mx-auto mb-2">HT CABLE</div>
-      <div class="border p-3 rounded"><img src="assets/images/HT LEAD.png" class="h-24 mx-auto mb-2">HT LEAD</div>
-      <div class="border p-3 rounded"><img src="assets/images/IGNITION TRANSFORMER.png" class="h-24 mx-auto mb-2">IGNITION TRANSFORMER</div>
-      <div class="border p-3 rounded"><img src="assets/images/INDIAN BURNER CONTROLLER.png" class="h-24 mx-auto mb-2">INDIAN BURNER CONTROLLER</div>
-      <div class="border p-3 rounded"><img src="assets/images/PHOTOCELL.png" class="h-24 mx-auto mb-2">PHOTOCELL</div>
-      <div class="border p-3 rounded"><img src="assets/images/PRESSURE GAUGES.png" class="h-24 mx-auto mb-2">PRESSURE GAUGES</div>
-
-      <div class="border p-3 rounded"><img src="assets/images/QRA2.png" class="h-24 mx-auto mb-2">QRA2</div>
-      <div class="border p-3 rounded"><img src="assets/images/REFRACTORY MATERIAL.jpg" class="h-24 mx-auto mb-2">REFRACTORY MATERIAL</div>
-      <div class="border p-3 rounded"><img src="assets/images/SIC TUBES.png" class="h-24 mx-auto mb-2">SIC TUBES</div>
-      <div class="border p-3 rounded"><img src="assets/images/SILICON CARBIDE TUBES.png" class="h-24 mx-auto mb-2">SILICON CARBIDE TUBES</div>
-      <div class="border p-3 rounded"><img src="assets/images/SILICON CARBIDE SKID.png" class="h-24 mx-auto mb-2">SILICON CARBIDE SKID</div>
-      <div class="border p-3 rounded"><img src="assets/images/SOLENOID COIL.png" class="h-24 mx-auto mb-2">SOLENOID COIL</div>
-      <div class="border p-3 rounded"><img src="assets/images/SOLENOID VALVES.png" class="h-24 mx-auto mb-2">SOLENOID VALVES</div>
-      <div class="border p-3 rounded"><img src="assets/images/SPARK PLUG.png" class="h-24 mx-auto mb-2">SPARK PLUG</div>
-      <div class="border p-3 rounded"><img src="assets/images/THERMOCOUPLES.png" class="h-24 mx-auto mb-2">THERMOCOUPLES</div>
-
-      <div class="border p-3 rounded"><img src="assets/images/UV CENSOR.png" class="h-24 mx-auto mb-2">UV SENSOR</div>
-      <div class="border p-3 rounded"><img src="assets/images/UVZ PHOTOCELL.png" class="h-24 mx-auto mb-2">UVZ PHOTOCELL</div>
-      <div class="border p-3 rounded"><img src="assets/images/VAPORISER HEATER.png" class="h-24 mx-auto mb-2">VAPORISER HEATER</div>
-      <div class="border p-3 rounded"><img src="assets/images/VOT PIGTAIL PIPE.png" class="h-24 mx-auto mb-2">VOT PIGTAIL PIPE</div>
-
-    </div>
-
-    <a href="https://wa.me/918329934227?text=Enquiry%20for%20Burner%20Spare%20Parts"
-       class="block mt-6 bg-orange-500 text-white text-center py-3 rounded font-semibold">
-      Enquire on WhatsApp
-    </a>
-  </div>
-</div>
-
-    <!-- SERVICES -->
-    <!-- ================= SERVICES ================= -->
-<section class="py-20 bg-gray-50">
+<section id="services" class="py-24 bg-white">
   <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div class="max-w-xl">
+        <h2 class="text-4xl font-bold text-slate-900 mb-4">Lifecycle Support</h2>
+        <p class="text-slate-500">From installation to annual maintenance, we ensure your systems run at peak performance.</p>
+      </div>
+    </div>
 
-    <h3 class="text-3xl font-bold text-center mb-14">
-      Our Services
-    </h3>
-
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-
-      <!-- SERVICE 1 -->
-      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition h-full">
-        <h4 class="font-semibold text-lg mb-4 text-gray-800">
-          Technical Service Support
-        </h4>
-        <ul class="text-sm text-gray-600 space-y-2">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition group">
+        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6 font-bold group-hover:bg-orange-600 group-hover:text-white transition">01</div>
+        <h4 class="font-bold text-lg mb-4">Technical Support</h4>
+        <ul class="text-sm text-slate-500 space-y-2">
           <li>• Installation & maintenance</li>
           <li>• 13+ years experience</li>
           <li>• On-site training</li>
           <li>• Furnace refurbishment</li>
         </ul>
       </div>
-
-      <!-- SERVICE 2 -->
-      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition h-full">
-        <h4 class="font-semibold text-lg mb-4 text-gray-800">
-          Relining Services
-        </h4>
-        <ul class="text-sm text-gray-600 space-y-2">
-          <li>• Estimation & installation</li>
+      <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition group">
+        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6 font-bold group-hover:bg-orange-600 group-hover:text-white transition">02</div>
+        <h4 class="font-bold text-lg mb-4">Relining Services</h4>
+        <ul class="text-sm text-slate-500 space-y-2">
+          <li>• Estimation & installations</li>
           <li>• Fire & insulation bricks</li>
           <li>• Ceramic fibre & Rockwool</li>
           <li>• SiC & Magnesite</li>
         </ul>
       </div>
-
-      <!-- SERVICE 3 -->
-      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition h-full">
-        <h4 class="font-semibold text-lg mb-4 text-gray-800">
-          Gas Trains / Burners AMC
-        </h4>
-        <ul class="text-sm text-gray-600 space-y-2">
+      <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition group">
+        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6 font-bold group-hover:bg-orange-600 group-hover:text-white transition">03</div>
+        <h4 class="font-bold text-lg mb-4">Gas Trains / Burners AMC</h4>
+        <ul class="text-sm text-slate-500 space-y-2">
           <li>• Annual contracts</li>
           <li>• Gas pressure & leak checks</li>
           <li>• Breakdown services</li>
           <li>• Fuel conversion</li>
         </ul>
       </div>
-
-      <!-- SERVICE 4 -->
-      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition h-full">
-        <h4 class="font-semibold text-lg mb-4 text-gray-800">
-          Fabrication Jobs
-        </h4>
-        <ul class="text-sm text-gray-600 space-y-2">
+      <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl transition group">
+        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6 font-bold group-hover:bg-orange-600 group-hover:text-white transition">04</div>
+        <h4 class="font-bold text-lg mb-4">Fabrication Jobs</h4>
+        <ul class="text-sm text-slate-500 space-y-2">
           <li>• Gas & air line works</li>
           <li>• Furnace fabrication</li>
           <li>• Flare stack projects</li>
           <li>• Custom designs</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="py-20 bg-cover bg-center"
-  style="background-image:url('assets/images/why-bg.png')">
-
-  <div class="bg-black/55">
-    <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 text-white">
-
-      <div class="md:pt-24">
-        <h3 class="text-2xl font-bold mb-6">Why Choose Us</h3>
-        <ul class="space-y-4">
-          <li>✔ Over 15 Years of Experience</li>
-          <li>✔ High Quality Products</li>
-          <li>✔ Expert Technical Support</li>
-          <li>✔ Pan India Service Coverage</li>
-        </ul>
-      </div>
-
-      <div>
-        <form id="whatsappForm" class="bg-white text-gray-800 p-8 rounded-xl mb-6">
-          <input id="name" class="w-full border p-3 mb-4 rounded" placeholder="Name" required>
-          <input id="phone" class="w-full border p-3 mb-4 rounded" placeholder="Phone" required>
-          <textarea id="message" class="w-full border p-3 mb-4 rounded" placeholder="Message"></textarea>
-          <button class="w-full bg-orange-500 text-white py-3 rounded font-semibold">
-            Send on WhatsApp
-          </button>
-        </form>
-
-        
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<!-- ================= FOOTER ================= -->
-<!-- ================= FOOTER ================= -->
-<footer class="bg-[#0f172a] text-gray-300">
-
-  <div class="max-w-7xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
-
-    <!-- BRAND + QR -->
+<section id="contact" class="py-24 bg-slate-900 relative overflow-hidden">
+  <img src="assets/images/Why-bg.png" class="absolute inset-0 opacity-20 object-cover w-full h-full">
+  <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
     <div>
-      <img src="assets/images/logo.png" class="h-14 mb-4">
-
-      <p class="text-sm text-gray-400 mb-6">
-        Trusted Industrial Heating Solutions Since 2017
-      </p>
-
-      <!-- TRANSPARENT QR -->
-      <div class="flex items-center gap-4">
-        <img src="assets/images/QR.png"
-             alt="GC Thermal IndiaMART QR"
-             class="w-32 h-32 object-contain">
-        <div class="text-sm">
-          <p class="font-semibold text-white">IndiaMART</p>
-          <p class="text-gray-400">Scan to view our products</p>
+      <h2 class="text-orange-500 font-bold mb-4 uppercase tracking-widest text-sm">Get in Touch</h2>
+      <h3 class="text-4xl font-bold text-white mb-8 leading-tight">Ready to optimize your thermal processes?</h3>
+      
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">📍</div>
+          <div><p class="text-white font-bold">Location</p><p class="text-slate-400 text-sm">Pune, Maharashtra, India</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">📞</div>
+          <div><p class="text-white font-bold">Call Us</p><a href="tel:+919881196467" class="text-slate-400 text-sm hover:text-orange-400">+91 83299 34227</a></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">✉</div>
+          <div><p class="text-white font-bold">Email</p><a href="mailto:sales.gcthermalpune@gmail.com" class="text-slate-400 text-sm hover:text-orange-400">sales.gcthermalpune@gmail.com</a></div>
         </div>
       </div>
     </div>
 
-    <!-- USEFUL LINKS -->
+    <div class="bg-white p-10 rounded-3xl shadow-2xl">
+      <form id="whatsappForm" class="space-y-4">
+        <input type="text" id="name" placeholder="Full Name" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:outline-none">
+        <input type="tel" id="phone" placeholder="Phone Number" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:outline-none">
+        <textarea id="message" placeholder="Describe your requirement..." rows="4" class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:outline-none"></textarea>
+        <button type="submit" class="w-full bg-orange-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-orange-700 transition shadow-lg shadow-orange-200">
+          Submit to WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="bg-slate-950 pt-16 pb-10 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+    
+    <div class="flex flex-col">
+      <img src="assets/images/logo.png" class="h-14 mb-6 w-fit" alt="GC Thermal Systems Logo">
+      <p class="text-slate-400 text-sm leading-relaxed">
+        GC Thermal Systems is a premier provider of industrial heating solutions with a focus on efficiency, safety, and innovation.
+      </p>
+    </div>
+    
     <div>
-      <h4 class="text-white font-semibold mb-4">Useful Links</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#home" class="hover:text-white">Home</a></li>
-        <li><a href="#about" class="hover:text-white">About Us</a></li>
-        <li><a href="#products" class="hover:text-white">Products</a></li>
-        <li><a href="#contact" class="hover:text-white">Contact</a></li>
-        <li><a href="#contact" class="hover:text-white">Get a Quote</a></li>
+      <h4 class="text-white font-bold mb-6">Explore</h4>
+      <ul class="text-slate-400 space-y-3 text-sm">
+        <li><a href="#home" class="hover:text-orange-500 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-orange-500 transition">About Us</a></li>
+        <li><a href="#products" class="hover:text-orange-500 transition">Products</a></li>
+        <li><a href="#services" class="hover:text-orange-500 transition">Services</a></li>
       </ul>
     </div>
 
-    <!-- OUR PRODUCTS -->
     <div>
-      <h4 class="text-white font-semibold mb-4">Our Products</h4>
-      <ul class="space-y-2 text-sm">
+      <h4 class="text-white font-bold mb-6">Products</h4>
+      <ul class="text-slate-400 space-y-3 text-sm">
         <li>Industrial Burners</li>
-        <li>Industrial Furnaces</li>
-        <li>Gas Trains & Piping</li>
-        <li>Control Panels (PLC / SCADA)</li>
-        <li>Burner Spare Parts</li>
+        <li>Heat Treatment Furnaces</li>
+        <li>Aluminium Melting</li>
+        <li>Gas Train Piping</li>
       </ul>
     </div>
 
-    <!-- CONTACT DETAILS -->
-    <div>
-      <h4 class="text-white font-semibold mb-4">Contact Us</h4>
-      <ul class="space-y-3 text-sm text-gray-400">
-        <li class="flex items-start gap-2">
-          📍 <span>Pune, Maharashtra</span>
-        </li>
-        <li class="flex items-start gap-2">
-          📞 <a href="tel:+918329934227" class="hover:text-white">
-            +91 83299 34227
-          </a>
-        </li>
-        <li class="flex items-start gap-2">
-          ✉ <a href="mailto:sales.gcthermalpune@gmail.com" class="hover:text-white">
-            sales.gcthermalpune@gmail.com
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div class="flex flex-col items-start gap-4">
+      <h4 class="text-white font-bold mb-2">Verified Business</h4>
+      <p class="text-slate-400 text-sm">
+        Scan our IndiaMART QR for direct product browsing and verified business details.
+      </p>
+      
+      <div>
+                <img src="assets/images/QR.png" class="w-[55%] h-auto block" alt="IndiaMART QR Code">
 
+      </div>
+      
+      <p class="text-[10px] text-orange-500 font-extrabold uppercase tracking-widest">Scan to Verify</p>
+    </div>
+    
   </div>
 
-  <!-- BOTTOM BAR -->
-  <div class="border-t border-white/10 py-4">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm gap-2">
-      <p>© 2025 GC Thermal Systems. All Rights Reserved.</p>
-      <p class="text-gray-400">Designed & Developed by WebNova</p>
-    </div>
+  <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest">
+    <p>© 2025 GC Thermal Systems. All Rights Reserved.</p>
+    <p class="text-slate-600">Designed & Developed by Web Nova.</p>
   </div>
-
 </footer>
 
-
-
+<a href="https://wa.me/919881196467" target="_blank" class="fixed bottom-32 right-8 z-[120] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition flex items-center gap-3 pr-6">
+  <svg class="w-6 h-6 fill-white" viewBox="0 0 32 32">
+    <path d="M16 2.93c-7.21 0-13.07 5.86-13.07 13.07 0 2.3.6 4.46 1.65 6.33L2 30l7.82-2.5a13.02 13.02 0 006.18 1.57c7.21 0 13.07-5.86 13.07-13.07S23.21 2.93 16 2.93z"/>
+  </svg>
+  <span class="font-bold whitespace-nowrap">WhatsApp Expert</span>
+</a>
 <script>
-  function openBurnerModal(){ burnerModal.classList.remove('hidden'); burnerModal.classList.add('flex'); }
-  function closeBurnerModal(){ burnerModal.classList.add('hidden'); }
+  // Simplified Modal Controller
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  }
 
-  function openFurnaceModal(){ furnaceModal.classList.remove('hidden'); furnaceModal.classList.add('flex'); }
-  function closeFurnaceModal(){ furnaceModal.classList.add('hidden'); }
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  }
 
-  function openSpareModal(){ spareModal.classList.remove('hidden'); spareModal.classList.add('flex'); }
-  function closeSpareModal(){ spareModal.classList.add('hidden'); }
+  // Close on outside click
+  window.onclick = function(event) {
+    if (event.target.classList.contains('bg-slate-900/90')) {
+      event.target.classList.add('hidden');
+      event.target.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+  }
 
+  // Contact Form
   document.getElementById("whatsappForm").addEventListener("submit", function(e) {
     e.preventDefault();
-    const text =
-      `Hello GC Thermal Systems,%0AName: ${name.value}%0APhone: ${phone.value}%0AEmail: ${email.value}%0A%0AMessage:%0A${message.value}`;
-    window.open(`https://wa.me/918329934227?text=${text}`, "_blank");
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const msg = document.getElementById("message").value;
+
+    const finalMsg = `Hello GC Thermal Systems,%0A*Quote Request*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Requirement:* ${msg}`;
+    window.open(`https://wa.me/919881196467?text=${finalMsg}`, "_blank");
   });
 </script>
-<!-- ================= FLOATING WHATSAPP ================= -->
-<!-- ================= FLOATING WHATSAPP ================= -->
-<a href="https://wa.me/918329934227"
-   target="_blank"
-   aria-label="Chat on WhatsApp"
-   class="fixed bottom-24 right-6 z-50 flex items-center gap-3
-          bg-green-500 hover:bg-green-600 text-white
-          px-5 py-3 rounded-full shadow-2xl
-          transition transform hover:scale-105">
-
-  <!-- WhatsApp Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="0 0 32 32"
-       class="w-6 h-6 fill-white">
-    <path d="M16 2.93c-7.21 0-13.07 5.86-13.07 13.07
-             0 2.3.6 4.46 1.65 6.33L2 30l7.82-2.5
-             a13.02 13.02 0 006.18 1.57
-             c7.21 0 13.07-5.86 13.07-13.07
-             S23.21 2.93 16 2.93z"/>
-    <path d="M19.11 17.2c-.27-.14-1.6-.79-1.85-.88
-             -.25-.09-.43-.14-.61.14
-             -.18.27-.7.88-.86 1.06
-             -.16.18-.32.2-.59.07
-             -.27-.14-1.15-.42-2.19-1.35
-             -.81-.72-1.35-1.61-1.51-1.88
-             -.16-.27-.02-.41.12-.55"/>
-  </svg>
-
-  <span class="hidden md:inline font-semibold">WhatsApp Us</span>
-</a>
-
 
 </body>
 </html>
-
-
